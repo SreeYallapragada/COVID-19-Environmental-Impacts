@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>COVID-19 ENVIRONMENTAL EFFECTS</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css"
+    integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+    crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"
+    integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q=="
+    crossorigin=""></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/d3Style.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+  <script src='https://api.mapbox.com/mapbox.js/v3.3.0/mapbox.js'></script>
+  <link href='https://api.mapbox.com/mapbox.js/v3.3.0/mapbox.css' rel='stylesheet' />
+
+</head>
+
+<body>
+  <nav class="navbar fixed-top navbar-expand-md navbar-custom ">
+    <a class="navbar-brand" href="index.html">
+      <a class="nav-link active-nav" href="index.html" style="color: #284269;"><i class="fas fa-home" style="color: #284269;"></i><strong>HOME</strong></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+      <ul class="nav navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="world.html"><strong>WORLD DATA</strong></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="us.html"><strong>US DATA</strong></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container-fluid banner">
+    <div class="hero banner-text text-center">
+      <h1 style="text-align: center;"><strong>COVID-19 ENVIRONMENTAL EFFECTS - PAST, PRESENT, FUTURE</strong></h1>
+      <div class="down-arrow"><a href="#start"><img src="/assets/img/down_arrow.gif"></a></div>
+    </div>
+  </div>
+  <div class="header">
+    <div class="row">
+      <div class="col-xs-12 col-md-12" id="start">
+        <small>India Gate, New Delhi, India (October 2019 v. April 2020) <a href="https://nypost.com/2020/04/22/earth-day-2020-photos-of-pollution-before-and-after-coronavirus/" target="_blank">(New York Post)</a></small>
+        <h1 style="text-align: center;"><strong> COVID-19 Project </strong></h1>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12  col-md-12">
+        <div class="article">
+          <p style="text-align: center;"> - midst of pandemic, - curiosity about virus impact, - what we studied, hyper link to world/us data pages, hopes for this new normal world (includes machine learning part).
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <hr>
+  <footer class="footer">
+    <div class="container-fluid text-center">
+      <a href="https://github.com/loryuen/final-project" target="_blank">
+        <i class="fab fa-github fa-2x" style="color: #284269;"></i>
+      </a>
+      <p class="text text-center">
+        <small>© Copyright: Erika Berry - Marianne Burchard - Jasmine Garcia - Kate Minyard - Sree Yallapragada - Lorelle Yuen</br>
+          UNC Chapel Hill© Data Analytics Boot Camp - 2020</small>
+      </p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.js"></script>
+  <script type="text/javascript" src="/assets/config.js"></script>
+</body>
+
+</html>
+

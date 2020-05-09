@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>WORLD DATA</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css"
+    integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+    crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"
+    integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q=="
+    crossorigin=""></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style2.css">
+</head>
+
+<body>
+  <nav class="navbar fixed-top navbar-expand-md navbar-custom ">
+    <a class="navbar-brand" href="index.html">
+      <a class="nav-link active-nav" href="index.html" style="color: #284269;"><i class="fas fa-home"
+          style="color: #284269"></i><strong>HOME</strong></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+        <ul class="nav navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="world.html"><strong>WORLD DATA</strong></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="us.html"><strong>US DATA</strong></a>
+          </li>
+        </ul>
+      </div>
+  </nav>
+  <div class="header">
+    <div class="row">
+      <div class="col-xs-12 col-md-12">
+        <h2 style="text-align: center;"><strong> WORLD AIR QUALITY DATA </strong></h2>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12  col-md-12">
+        <div class="title" style="text-align: center;">
+          <h4><strong>WORLD AIR QUALITY: BEFORE & AFTER THE COVID-19 PANDEMIC</strong></h4>
+          <p>SUMMARY SENTENCE HERE </p>
+        </div>
+      </div>
+    </div>
+    <hr>
+  </div>
+  <div class="header">
+    <div class="row">
+      <div class="col-xs-12 col-md-12">
+        <div id="section_one" style="text-align: center;">
+          <h2><strong>SECTION 1</strong></h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <style>
+    .section_one-container {
+      height: 500px
+    }
+  </style>
+  <br>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 section_one-container">
+        <div id="section_one"></div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="header">
+    <div class="row">
+      <div class="col-xs-12 col-md-12">
+        <div style="text-align: center;">
+          <h2><strong>SECTION 2</strong></h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="container">
+    <div class="row">
+      <br>
+      <div class="col-md-12">
+        <div id="section_two" style="text-align: justify;"></div>
+      </div>
+      <br>
+    </div>
+  </div>
+  <br>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div id="sec_two_space" style="width:100%; height: 400px;"></div>
+      </div>
+      <br>
+      <hr>
+      <br>
+    </div>
+  </div>
+  <br>
+  <br>
+  <hr>
+  <footer class="footer">
+    <div class="container-fluid text-center">
+      <a href="https://github.com/loryuen/final-project" target="_blank">
+        <i class="fab fa-github fa-2x" style="color: #284269;"></i>
+      </a>
+      <p class="text text-center">
+        <small>© Copyright: Erika Berry - Marianne Burchard - Jasmine Garcia - Kate Minyard - Sree Yallapragada - Lorelle Yuen</br>
+          UNC Chapel Hill© Data Analytics Boot Camp - 2020</small>
+      </p>
+    </div>
+  </footer>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.js"></script>
+  <script type="text/javascript" src="/assets/heatmap.js"></script>
+  <script type="text/javascript" src="/assets/config.js"></script>
+  </body>
+
+</html>

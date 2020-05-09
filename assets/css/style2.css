@@ -1,0 +1,69 @@
+/* World Data Page */
+
+html,
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+
+body{
+  font-family: 'Barlow Condensed' , sans-serif;
+  font-size: 20px;
+  padding-bottom: 80px;
+  background-color: #b8dcff;
+}
+
+.navbar-brand {
+	font-family: "Source Sans Pro";
+	font-weight: bolder;
+	font-size: 20px;
+  margin-left: 40px;
+  color: #284269;
+}
+
+nav .navbar-nav li a{
+  color: #284269 !important;
+  }
+
+.nav-item{
+	padding-left: 15px;
+}
+
+.header{
+  margin-top: 0;
+  font-family: 'Barlow Condensed', sans-serif;
+  background: #e6b292;
+  color: #284269;
+  padding:20px;
+  padding-left: 60px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.title{
+  margin-top: 20px;
+}
+
+/* Sticky Footer rules (https://getbootstrap.com/examples/sticky-footer/) */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%; /* Set the fixed height of the footer here */
+  height: 10px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  text-align: center;
+  background-color: #284269;
+}
+
+#footer p {
+  margin: 0;
+  font-size: 16px;
+}
