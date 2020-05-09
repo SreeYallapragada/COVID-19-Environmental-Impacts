@@ -1,7 +1,7 @@
 /* Homepage  */
 
 .banner {
-	background-image: url("/assets/site_images/image5.png");
+	background-image: url("assets/site_images/image5.png");
 	min-height: 700px;
 	background-repeat: no-repeat;
 	background-position: center top; 
